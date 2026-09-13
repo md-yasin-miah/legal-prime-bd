@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "legal-prime",
+  "account_id": "eb106a5b659faf47d88b35997c4dbb59",
+  "compatibility_date": "2026-03-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS",
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "legal-prime",
+    },
+  ],
+  "images": {
+    "binding": "IMAGES",
+  },
+  "routes": [
+    {
+      "pattern": "legalprimebd.com",
+      "custom_domain": true,
+    },
+    {
+      "pattern": "www.legalprimebd.com",
+      "custom_domain": true,
+    },
+  ],
+}

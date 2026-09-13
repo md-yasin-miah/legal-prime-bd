@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
+import { siteConfig } from "@/app/data/landing-content";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -15,6 +16,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.website),
   title: "Chancery & Tax Partners Dhaka | Supreme Court & NBR Tax Consultants",
   description:
     "Premier tax and legal consultancy in Bangladesh. Supreme Court advocates and NBR Income Tax Practitioners serving corporate disputes, appellate tribunals, and cross-border transactions.",

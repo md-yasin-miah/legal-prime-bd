@@ -5,6 +5,7 @@ export const siteConfig = {
   phoneDisplay: "+880 1794-899610",
   email: "advahmedhasib@gmail.com",
   whatsapp: "https://wa.me/8801794899610",
+  website: "https://legalprimebd.com",
   address: {
     line1: "Level 5, Chancery Tower, Pallabi, Mirpur 12 / Mirpur DOHS",
     line2: "Adjacent to Metro Rail Pillars 194-195, Dhaka 1216, Bangladesh",
